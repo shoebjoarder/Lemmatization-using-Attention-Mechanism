@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+.idea
+CAS/
+Old/
+output_lemmatizer_1M.csv
