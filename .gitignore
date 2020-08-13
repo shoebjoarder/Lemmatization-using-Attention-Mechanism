@@ -130,4 +130,10 @@ dmypy.json
 .idea
 CAS/
 Old/
-output_lemmatizer_1M.csv
+.vscode/
+eng-lem-1m.csv
+.data/
+test.py
+torchtext.ipynb
+runs/
+my_checkpoint.pth.tar
