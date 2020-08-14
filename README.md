@@ -1,1 +1,1 @@
-# seq2seq-lemmatization
+# Lemmatization using Attention Mechanism
