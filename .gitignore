@@ -128,9 +128,13 @@ dmypy.json
 # Pyre type checker
 .pyre/
 .idea
+CAS/
+Old/
 .vscode/
+eng-lem-1m.csv
 .data/
+test.py
+torchtext.ipynb
 runs/
 my_checkpoint.pth.tar
 ref/
-/data/english.txt
