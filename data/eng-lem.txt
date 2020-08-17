@@ -1,5 +1,4 @@
 sentence	lemma
-sentence	sentence
 "I did n't know it was police housing , "" officers quoted Tsuchida as saying ."	"I do not know it be police housing , "" officer quote Tsuchida as say ."
 "You would be a great client for Southern Indiana Homeownership 's credit counseling but you are saying to yourself "" Oh , we can pay that off . """	"you would be a great client for Southern Indiana Homeownership 's credit counseling but you be say to yourself "" oh , we can pay that off . """
 "He believes the 21st century will be the "" century of biology "" just as the 20th century was the century of IT ."	"he believe the 21st century will be the "" century of biology "" just as the 20th century be the century of it ."
