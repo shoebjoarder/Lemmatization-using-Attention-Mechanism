@@ -133,4 +133,4 @@ dmypy.json
 runs/
 my_checkpoint.pth.tar
 ref/
-/data/english.txt
+translations/
