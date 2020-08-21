@@ -2,6 +2,7 @@ import torch
 import spacy
 from torchtext.data.metrics import bleu_score
 import sys
+import pickle
 
 
 def process_sentence(model, sentence, inputText, outputText, device, max_length=50):
@@ -42,22 +43,14 @@ def process_sentence(model, sentence, inputText, outputText, device, max_length=
     return processed_sentence[1:]
 
 
+def save_obj(obj, name ):
+    with open(name + '.pkl', 'wb') as f:
+        pickle.dump(obj, f, pickle.HIGHEST_PROTOCOL)
 
-def bleu(data, model, inputText, outputText, device):
-    targets = []
-    outputs = []
 
-    for example in data:
-        src = vars(example)["src"]
-        trg = vars(example)["trg"]
-
-        prediction = translate_sentence(model, src, inputText, outputText, device)
-        prediction = prediction[:-1]  # remove <eos> token
-
-        targets.append([trg])
-        outputs.append(prediction)
-
-    return bleu_score(outputs, targets)
+def load_obj(name):
+    with open(name + '.pkl', 'rb') as f:
+        return pickle.load(f)
 
 
 def save_checkpoint(state, filename="my_checkpoint.pth.tar"):

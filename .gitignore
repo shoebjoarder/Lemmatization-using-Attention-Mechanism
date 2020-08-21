@@ -130,6 +130,6 @@ dmypy.json
 .idea
 .vscode/
 .data/
-my_checkpoint.pth.tar
 ref/
-translations/
+data/
+model/
