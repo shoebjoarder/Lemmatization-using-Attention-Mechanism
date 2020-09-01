@@ -121,7 +121,7 @@ venv.bak/
 /site
 
 # mypy
-.mypy_cache/
+.mypy_cache
 .dmypy.json
 dmypy.json
 
@@ -131,5 +131,7 @@ dmypy.json
 .vscode/
 .data/
 ref/
-data/
+translations/
+1M/
+10k/
 model/
