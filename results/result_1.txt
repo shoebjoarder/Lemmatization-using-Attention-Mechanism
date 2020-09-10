@@ -1,0 +1,31 @@
+/home/user3/.local/lib/python3.6/site-packages/torchtext/data/field.py:150: UserWarning: Field class will be retired in the 0.8.0 release and moved to torchtext.legacy. Please see 0.7.0 release notes for further information.
+  warnings.warn('{} class will be retired in the 0.8.0 release and moved to torchtext.legacy. Please see 0.7.0 release notes for further information.'.format(self.__class__.__name__), UserWarning)
+
+100%|██████████| 10220/10220 [3:19:14<00:00,  1.17s/it]
+
+Downloading https://raw.githubusercontent.com/stanfordnlp/stanza-resources/master/resources_1.1.0.json:   0%|          | 0.00/24.4k [00:00<?, ?B/s]
+Downloading https://raw.githubusercontent.com/stanfordnlp/stanza-resources/master/resources_1.1.0.json: 122kB [00:00, 19.9MB/s]                    
+2020-09-09 11:22:00 INFO: Downloading default packages for language: en (English)...
+2020-09-09 11:22:02 INFO: File exists: /home/user3/stanza_resources/en/default.zip.
+2020-09-09 11:22:17 INFO: Finished downloading models and saved to /home/user3/stanza_resources.
+2020-09-09 11:22:17 WARNING: Can not find mwt: default from official model list. Ignoring it.
+2020-09-09 11:22:17 INFO: Loading these models for language: en (English):
+=======================
+| Processor | Package |
+-----------------------
+| tokenize  | ewt     |
+| pos       | ewt     |
+| lemma     | ewt     |
+=======================
+
+2020-09-09 11:22:17 INFO: Use device: gpu
+2020-09-09 11:22:17 INFO: Loading: tokenize
+2020-09-09 11:22:17 INFO: Loading: pos
+2020-09-09 11:22:19 INFO: Loading: lemma
+2020-09-09 11:22:19 INFO: Done loading processors!
+
+100%|██████████| 10220/10220 [09:06<00:00, 18.72it/s]
+=> Loading checkpoint
+['the', 'feasibility', 'study', 'estimate', 'that', 'it', 'would', 'take', 'passenger', 'about', 'four', 'minute', 'to', 'cross', 'the', 'potomac', 'river', 'on', 'the', 'gondola', '.']
+Attention Accuracy: 25.13
+Stanza Accuracy: 24.69
