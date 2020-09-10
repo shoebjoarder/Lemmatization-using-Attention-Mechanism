@@ -17,12 +17,9 @@ spacyTokenizer = spacy.load("en")
 
 
 def process_sentence(model, sentence, inputText, outputText, device, max_length=50):
-    # Load tokenizer
-    spacy_tokenizer = spacy.load("en")
-
     # Create tokens using spacy and everything in lower case (which is what our vocab is)
     if type(sentence) == str:
-        tokens = [token.text.lower() for token in spacy_tokenizer(sentence)]
+        tokens = [token.text.lower() for token in spacyTokenizer(sentence)]
     else:
         tokens = [token.lower() for token in sentence]
 
@@ -55,7 +52,7 @@ def process_sentence(model, sentence, inputText, outputText, device, max_length=
 
 
 def save_obj(obj, name ):
-    with open(name + '.pkl', 'wb') as f:
+    with open("./model/" +name + '.pkl', 'wb') as f:
         pickle.dump(obj, f, pickle.HIGHEST_PROTOCOL)
 
 

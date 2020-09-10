@@ -127,6 +127,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# custom ignores
 .idea
 .vscode/
 .data/
@@ -135,3 +137,8 @@ translations/
 1M/
 10k/
 model/
+eng-lem.txt.3m
+my_checkpoint.pth.tar
+inputText.pkl
+outputText.pkl
+runs/
